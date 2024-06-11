@@ -1,4 +1,4 @@
-# Documento de Requisitos do Teste Prático para Programadores Júnior
+# Desenvolvedor Back End JR - Documento de Requisitos
 
 ## Introdução
 Este documento descreve os requisitos de negócio e técnicos para o teste prático destinado a programadores júnior que desejam ingressar na nossa empresa como desenvolvedores de aplicações Web focadas em Ecommerce. O teste consiste na criação de uma página HTML para um carrinho de compras com funcionalidades específicas, utilizando ASP.NET MVC ou Razor Pages e banco de dados SQL Server.
