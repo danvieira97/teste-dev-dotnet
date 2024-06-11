@@ -103,17 +103,16 @@ O objetivo deste teste é avaliar a capacidade do candidato em:
 - **Banco de Dados**: SQL Server deve ser utilizado para armazenamento dos dados do carrinho.
   - **Dapper**: Deve ser utilizado para acesso aos dados, garantindo manipulação direta do SQL.
 - **Modelo de Dados**:
-   - **Produto**
-     - Id (int)
-     - Nome (string)
-     - PreçoUnitario (decimal)
+   - **Carrinho**
+     - Itens (coleção de ItemCarrinho)
+     - TotalItens (int)
+     - PrecoUnitario (decimal, calculado coma soma do PrecoTotal dos Itens)
    - **ItemCarrinho**
-     - Id (int)
-     - ProdutoId (int, foreign key)
+     - Id (int ou guid)
      - NomeProduto (string)
      - Quantidade (int)
-     - PreçoUnitario (decimal)
-     - PreçoTotal (decimal, calculado como Quantidade * PreçoUnitario)
+     - PrecoUnitario (decimal)
+     - PrecoTotal (decimal, calculado como Quantidade * PreçoUnitario)
 
 ### Funcionalidades Específicas
 1. **Gerenciamento do Carrinho**:
