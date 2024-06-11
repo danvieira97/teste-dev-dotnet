@@ -70,7 +70,59 @@ O objetivo deste teste é avaliar a capacidade do candidato em:
 - **Segurança**: Validação adequada dos dados de entrada para prevenir ataques como SQL Injection e XSS.
 - **Usabilidade**: A interface deve ser intuitiva e fácil de usar.
 
-## Considerações Finais
-Os candidatos devem entregar o código-fonte completo do projeto, juntamente com um README contendo instruções para configuração do ambiente, execução do projeto e qualquer outro detalhe relevante. 
+# Passo a Passo para Realização do Teste Prático
 
-Este teste prático permitirá avaliar a habilidade do candidato em desenvolver uma aplicação web funcional e eficiente, abordando aspectos chave do desenvolvimento de ecommerce.
+Para realizar o teste prático, siga os passos abaixo:
+
+1. **Criar um Fork**
+   - Acesse o repositório fornecido no GitHub.
+   - Clique no botão "Fork" no canto superior direito da página para criar uma cópia do repositório no seu GitHub.
+
+2. **Clonar o Repositório Fork**
+   - Clone o repositório forkado para sua máquina local.
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   ```
+   - Navegue até o diretório do repositório clonado.
+   ```bash
+   cd nome-do-repositorio
+   ```
+
+3. **Criar a Estrutura do Projeto**
+   - Crie uma pasta chamada `src` dentro do diretório do repositório clonado.
+   ```bash
+   mkdir src
+   ```
+
+4. **Desenvolver o Projeto**
+   - Dentro da pasta `src`, desenvolva a aplicação conforme os requisitos descritos anteriormente:
+     - Utilize ASP.NET MVC ou Razor Pages para o backend.
+     - Utilize SQL Server como banco de dados, podendo usar Entity Framework ou Dapper para acesso aos dados.
+     - Implemente a interface do carrinho de compras com as funcionalidades especificadas.
+
+5. **Subir o Projeto para o Repositório**
+   - Adicione todos os arquivos do projeto à área de staging do Git.
+   ```bash
+   git add .
+   ```
+   - Faça um commit das alterações.
+   ```bash
+   git commit -m "Desenvolvimento do projeto do carrinho de compras"
+   ```
+   - Envie o commit para o repositório remoto.
+   ```bash
+   git push origin main
+   ```
+
+6. **Enviar Notificação de Conclusão**
+   - Ao finalizar o desenvolvimento e subir todo o projeto no repositório, envie um email para `testes@leanwork.com.br` com as seguintes informações:
+     - Seu nome completo.
+     - O link para o repositório do GitHub com o projeto desenvolvido.
+     - Qualquer outra informação que julgar relevante.
+
+## Considerações Finais
+- Certifique-se de que todos os arquivos necessários para a execução do projeto estão incluídos no repositório.
+- Inclua um arquivo `README.md` com instruções detalhadas para configuração do ambiente e execução do projeto.
+- Garanta que o código esteja bem organizado e documentado conforme as boas práticas de desenvolvimento.
+
+Boa sorte!
