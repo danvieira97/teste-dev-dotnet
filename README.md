@@ -1,7 +1,7 @@
 # Dev Back End .NET JR - Documento de Requisitos
 
 ## Introdução
-Este documento descreve os requisitos de negócio e técnicos para o teste prático destinado a programadores júnior que desejam ingressar na Leanwork Group como desenvolvedores de aplicações Web focadas em Ecommerce. O teste consiste na criação de uma API para gerenciamento de carrinho de compras, utilizando ASP.NET e banco de dados SQL Server, com acesso aos dados feito exclusivamente via Dapper.
+Este documento descreve os requisitos de negócio e técnicos para o teste prático destinado a programadores .NET Júnior que desejam ingressar na Leanwork Group como desenvolvedores de aplicações Web focadas em Ecommerce. O teste consiste na criação de uma API para gerenciamento de carrinho de compras, utilizando ASP.NET e banco de dados SQL Server, com acesso aos dados feito exclusivamente via Dapper.
 
 ## Objetivos
 O objetivo deste teste é avaliar a capacidade do candidato em:
