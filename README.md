@@ -1,7 +1,9 @@
-# Dev Back End .NET JR - Documento de Requisitos
+# Desenvolvedor .NET - Documento de Requisitos
 
 ## Introdução
-Este documento descreve os requisitos de negócio e técnicos para o teste prático destinado a programadores .NET Júnior que desejam ingressar na Leanwork Group como desenvolvedores de aplicações Web focadas em Ecommerce. O teste consiste na criação de uma API para gerenciamento de carrinho de compras, utilizando ASP.NET e banco de dados SQL Server, com acesso aos dados feito exclusivamente via Dapper.
+Este documento descreve os requisitos de negócio e técnicos para o teste prático destinado a Programadores .NET que desejam ingressar na Leanwork Group como desenvolvedores de aplicações Web focadas em Ecommerce. O teste consiste na criação de uma aplicação para gerenciamento de carrinho de compras, utilizando ASP.NET e banco de dados SQL Server, com acesso aos dados feito exclusivamente via Dapper.
+
+# Parte #1 - Criar uma API de gestão de Carrinho de Compras
 
 ## Objetivos
 O objetivo deste teste é avaliar a capacidade do candidato em:
@@ -132,6 +134,75 @@ Criar uma pasta chamada 'SQL' e armazenar os scripts lá dentro do projeto.
 ## Resultados Desejáveis (Opcional)
 - **Desenvolvimento em Camadas**: Implementar a aplicação utilizando uma arquitetura em camadas (camada de apresentação, camada de aplicação, camada de domínio, camada de infraestrutura).
 - **Testes**: Implementar testes unitários e/ou de integração para garantir a qualidade do código e a funcionalidade da API.
+
+# Parte #2 - Criar uma interface visual para manipular o Carrinho de Compras
+
+## Objetivos
+
+O objetivo deste teste é avaliar a capacidade do candidato em:
+- Desenvolver uma aplicação web utilizando ASP.NET MVC ou Razor Pages.
+- Consumir uma API RESTful usando JavaScript ou uma biblioteca auxiliar.
+- Implementar uma interface de usuário dinâmica com HTML, CSS e JavaScript.
+- Aplicar boas práticas de desenvolvimento, incluindo organização de código, clareza e eficiência.
+
+## Requisitos de Negócio
+
+### Funcionalidades
+
+1. **Página do Carrinho de Compras**:
+   - A página deve exibir uma tabela com os seguintes campos para cada item no carrinho:
+     - Nome do Produto
+     - Quantidade
+     - Preço Unitário
+     - Preço Total (Quantidade x Preço Unitário)
+     - Botão para Excluir Item
+
+2. **Adicionar Item ao Carrinho**:
+   - Deve haver um botão "Adicionar Item", que ao ser clicado, exibe um modal com os seguintes campos:
+     - Nome do Produto
+     - Preço Unitário
+     - Quantidade
+     - Botão para Adicionar o Produto ao Carrinho
+   - **Validações**:
+     - Nome do Produto não pode estar vazio.
+     - Preço Unitário deve ser um valor positivo.
+     - Quantidade deve ser um valor inteiro positivo.
+
+3. **Remover Item do Carrinho**:
+   - Cada linha do item no carrinho deve ter um botão "Excluir" para remover o item.
+
+4. **Alterar Quantidade de Item**:
+   - Cada linha do item no carrinho deve ter um campo ou dropdown para alterar a quantidade do item.
+
+### Integração com a API
+
+A integração com a API deve ser realizada diretamente pelo Front End usando JavaScript puro ou qualquer biblioteca de preferência que pode auxiliar no desenvolvimento e produtividade (como por exemplo o jQuery). Abaixo estão os endpoints que devem ser consumidos:
+
+- **Obter Carrinho**: `GET /api/carrinho`
+- **Adicionar Item**: `POST /api/carrinho`
+- **Remover Item**: `DELETE /api/carrinho/{id}`
+- **Atualizar Quantidade de Item**: `PUT /api/carrinho/{id}`
+
+## Requisitos Técnicos
+
+### Backend
+- **ASP.NET MVC ou Razor Pages**: O desenvolvimento deve ser realizado utilizando uma dessas tecnologias.
+
+### Frontend
+- **HTML/CSS**: Utilizar Bootstrap para o layout.
+- **JavaScript**: Utilizar JavaScript puro ou qualquer biblioteca de preferência (como jQuery) para interação com a API.
+
+## Resultados Esperados
+
+### Essenciais (Funcional)
+- A aplicação deve consumir a API corretamente.
+- Deve ser possível adicionar, remover e atualizar a quantidade dos itens no carrinho.
+- A interface deve ser responsiva e intuitiva.
+
+### Desejáveis
+- Utilização de uma estrutura de projeto organizada.
+- Desenvolvimento em camadas.
+- Inclusão de testes unitários e/ou de integração.
 
 ## Passo a Passo para Realização do Teste
 
