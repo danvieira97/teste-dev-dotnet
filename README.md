@@ -125,6 +125,7 @@ O objetivo deste teste é avaliar a capacidade do candidato em:
 
 ### Estrutura de Tabelas
 Deve ser criado o script das 2 tabelas: Carrinhos e Carrinho_Itens.
+
 Criar uma pasta chamada 'SQL' e armazenar os scripts lá dentro do projeto.
 
 ## Resultados Essenciais
