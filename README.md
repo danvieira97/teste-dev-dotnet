@@ -108,10 +108,10 @@ O objetivo deste teste é avaliar a capacidade do candidato em:
    - **Carrinho**
      - Itens (coleção de ItemCarrinho)
      - TotalItens (int)
-     - PrecoUnitario (decimal, calculado coma soma do PrecoTotal dos Itens)
+     - ValorTotal (decimal, calculado coma soma do PrecoTotal dos Itens)
    - **ItemCarrinho**
      - Id (int ou guid)
-     - NomeProduto (string)
+     - Produto (string)
      - Quantidade (int)
      - PrecoUnitario (decimal)
      - PrecoTotal (decimal, calculado como Quantidade * PreçoUnitario)
