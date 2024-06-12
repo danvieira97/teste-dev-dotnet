@@ -128,13 +128,15 @@ Deve ser criado o script das 2 tabelas: Carrinhos e Carrinho_Itens.
 
 Criar uma pasta chamada 'SQL' e armazenar os scripts lá dentro do projeto.
 
-## Resultados Essenciais
-- **Funcional**: A API deve estar completamente funcional, permitindo a gestão de um carrinho de compras através dos endpoints especificados.
-- **Validações**: Deve ser realizado todas validações necessários desde a obrigatoriedade das informações ao adicionar um item ao carrinho, excluir um item que não existe, etc.
+## Resultado Final
 
-## Resultados Desejáveis (Opcional)
-- **Desenvolvimento em Camadas**: Implementar a aplicação utilizando uma arquitetura em camadas (camada de apresentação, camada de aplicação, camada de domínio, camada de infraestrutura).
-- **Testes**: Implementar testes unitários e/ou de integração para garantir a qualidade do código e a funcionalidade da API.
+## Esperado
+- A API deve estar completamente funcional, permitindo a gestão de um carrinho de compras através dos endpoints especificados.
+- Deve ser realizado todas validações necessários desde a obrigatoriedade das informações ao adicionar um item ao carrinho, excluir um item que não existe, etc.
+
+## Desejável (Opcional)
+- Implementar a aplicação utilizando uma arquitetura em camadas (camada de apresentação, camada de aplicação, camada de domínio, camada de infraestrutura).
+- Implementar testes unitários e/ou de integração para garantir a qualidade do código e a funcionalidade da API.
 
 # Parte #2 - Criar uma interface visual para manipular o Carrinho de Compras
 
@@ -193,17 +195,16 @@ A integração com a API deve ser realizada diretamente pelo Front End usando Ja
 - **HTML/CSS**: Utilizar Bootstrap para o layout.
 - **JavaScript**: Utilizar JavaScript puro ou qualquer biblioteca de preferência (como jQuery) para interação com a API.
 
-## Resultados Esperados
+## Resultado Final
 
-### Essenciais (Funcional)
+### Esperado
 - A aplicação deve consumir a API corretamente.
 - Deve ser possível adicionar, remover e atualizar a quantidade dos itens no carrinho.
 - A interface deve ser responsiva e intuitiva.
 
-### Desejáveis
-- Utilização de uma estrutura de projeto organizada.
-- Desenvolvimento em camadas.
-- Inclusão de testes unitários e/ou de integração.
+### Desejável
+- Implementar a aplicação utilizando uma arquitetura em camadas (camada de apresentação, camada de aplicação, camada de domínio, camada de infraestrutura).
+- Implementar testes unitários e/ou de integração para garantir a qualidade do código e a funcionalidade da API.
 
 ## Passo a Passo para Realização do Teste
 
