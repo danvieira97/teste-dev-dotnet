@@ -1,4 +1,4 @@
-# Desenvolvedor .NET - Documento de Requisitos
+# Teste Prático - Dev .NET - Leanwork Group
 
 ## Introdução
 Este documento descreve os requisitos de negócio e técnicos para o teste prático destinado a Programadores .NET que desejam ingressar na Leanwork Group como desenvolvedores de aplicações Web focadas em Ecommerce. O teste consiste na criação de uma aplicação para gerenciamento de carrinho de compras, utilizando ASP.NET e banco de dados SQL Server, com acesso aos dados feito exclusivamente via Dapper.
