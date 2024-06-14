@@ -206,7 +206,7 @@ A integração com a API deve ser realizada diretamente pelo Front End usando Ja
 - Implementar a aplicação utilizando uma arquitetura em camadas (camada de apresentação, camada de aplicação, camada de domínio, camada de infraestrutura).
 - Implementar testes unitários e/ou de integração para garantir a qualidade do código e a funcionalidade da API.
 
-### Passo a Passo para Realização do Teste
+# Passo a Passo para Realização do Teste
 
 1. **Criar um Fork**
    - Acesse o repositório fornecido no GitHub.
