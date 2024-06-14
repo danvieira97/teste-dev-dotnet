@@ -134,7 +134,7 @@ Criar uma pasta chamada 'SQL' e armazenar os scripts lá dentro do projeto.
 - A API deve estar completamente funcional, permitindo a gestão de um carrinho de compras através dos endpoints especificados.
 - Deve ser realizado todas validações necessários desde a obrigatoriedade das informações ao adicionar um item ao carrinho, excluir um item que não existe, etc.
 
-## Desejável (Opcional)
+## Desejável
 - Implementar a aplicação utilizando uma arquitetura em camadas (camada de apresentação, camada de aplicação, camada de domínio, camada de infraestrutura).
 - Implementar testes unitários e/ou de integração para garantir a qualidade do código e a funcionalidade da API.
 
