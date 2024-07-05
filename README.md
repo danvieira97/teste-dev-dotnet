@@ -3,6 +3,10 @@
 ## Introdução
 Este documento descreve os requisitos de negócio e técnicos para o teste prático destinado a Programadores .NET que desejam ingressar na Leanwork Group como desenvolvedores de aplicações Web focadas em Ecommerce. O teste consiste na criação de uma aplicação para gerenciamento de carrinho de compras, utilizando ASP.NET e banco de dados SQL Server, com acesso aos dados feito exclusivamente via Dapper.
 
+## !!! IMPORTANTE !!!
+Essa página contém TODAS as instruções de como o teste deve ser realizado, quais tecnologias utilizar e como deve ser entregue.
+Antes de realizar o teste leia TODAS as instruções até o final com calma para absorver o entendimento.
+
 # Parte #1 - Criar uma API de gestão de Carrinho de Compras
 
 ## Objetivos
@@ -124,9 +128,8 @@ O objetivo deste teste é avaliar a capacidade do candidato em:
 2. **Persistência de Dados**: Os dados do carrinho devem ser persistidos no banco de dados SQL Server.
 
 ### Estrutura de Tabelas
-Deve ser criado o script das 2 tabelas: Carrinhos e Carrinho_Itens.
-
-Criar uma pasta chamada 'SQL' e armazenar os scripts lá dentro do projeto.
+- Deve ser criado o script das 2 tabelas: Carrinhos e Carrinho_Itens.
+- Criar uma pasta chamada 'SQL' e armazenar os scripts lá dentro do projeto. Pode utilizar um banco de dados local, via docker, em nuveme e etc, desde que não esqueça de versionar os scripts SQL junto com o projeto para criarmos a mesma estrutura para validarmos ao avaliar o teste.
 
 ## Resultado Final
 
