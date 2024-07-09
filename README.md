@@ -146,7 +146,7 @@ O objetivo deste teste é avaliar a capacidade do candidato em:
 
 O objetivo deste teste é avaliar a capacidade do candidato em:
 - Desenvolver uma aplicação web utilizando ASP.NET MVC ou Razor Pages.
-- Consumir uma API RESTful usando JavaScript ou uma biblioteca auxiliar.
+- Consumir a API criada na Parte #1 utilizando JavaScript ou uma biblioteca auxiliar (jQuery, Angular, etc).
 - Implementar uma interface de usuário dinâmica com HTML, CSS e JavaScript.
 - Aplicar boas práticas de desenvolvimento, incluindo organização de código, clareza e eficiência.
 
