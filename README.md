@@ -1,27 +1,27 @@
 # Teste Prático - Dev .NET - Leanwork Group
 
 ## Introdução
-Este documento descreve os requisitos de negócio e técnicos para o teste prático destinado a Programadores .NET que desejam ingressar na Leanwork Group como desenvolvedores de aplicações Web focadas em Ecommerce. O teste consiste na criação de uma aplicação para gerenciamento de carrinho de compras, utilizando ASP.NET e banco de dados SQL Server, com acesso aos dados feito exclusivamente via Dapper.
+Este documento descreve os requisitos de negócio e técnicos para o teste prático destinado a Programadores .NET que desejam ingressar na Leanwork Group como desenvolvedores de aplicações Web focadas em Ecommerce. O teste consiste na criação de uma aplicação para gerenciamento de carrinho de compras, tal como é em um Ecommerce onde é possível adicionar, remover e atualizar itens durante a compra.
 
 ## !!! IMPORTANTE !!!
 Essa página contém TODAS as instruções de como o teste deve ser realizado, quais tecnologias utilizar e como deve ser entregue. Portanto, leia tudo com calma e mais de uma vez se for necessário!
 
-# Parte #1 - Criar uma API de gestão de Carrinho de Compras
+# Parte #1 - Criar uma API REST de gestão de Carrinho de Compras
 
 ## Objetivos
 O objetivo deste teste é avaliar a capacidade do candidato em:
-- Desenvolver uma API utilizando o framework web ASP.NET.
+- Desenvolver uma API REST utilizando o framework web ASP.NET.
 - Implementar endpoints para gestão de um carrinho de compras.
 - Manipular dados utilizando Dapper com SQL Server.
 - Aplicar boas práticas de desenvolvimento, incluindo organização de código, clareza e eficiência.
 
 ## Requisitos de Negócio
 
-### Endpoints da API
+### Endpoints da API REST
 1. **Obter Carrinho**
    - **Método HTTP**: GET
    - **URL**: `/api/carrinho`
-   - **Descrição**: Retorna todos os itens do carrinho.
+   - **Descrição**: Retorna o carrinho com seus totais e itens.
    - **Resposta**:
      ```json
      {
@@ -106,12 +106,12 @@ O objetivo deste teste é avaliar a capacidade do candidato em:
 ### Backend
 - **ASP.NET**: O desenvolvimento deve ser realizado utilizando o framework web da Microsoft.
 - **Banco de Dados**: SQL Server deve ser utilizado para armazenamento dos dados do carrinho.
-  - **Dapper**: Deve ser utilizado para acesso aos dados, garantindo manipulação direta do SQL.
+  - **Dapper**: Deve ser utilizado a biblioteca Dapper para acesso aos dados, garantindo manipulação direta do SQL.
 - **Modelo de Dados**:
    - **Carrinho**
      - Itens (coleção de ItemCarrinho)
-     - TotalItens (int)
-     - ValorTotal (decimal, calculado coma soma do PrecoTotal dos Itens)
+     - TotalItens (int, calculado com a com a soma da Quantidade dos Itens)
+     - ValorTotal (decimal, calculado com a soma do PrecoTotal dos Itens)
    - **ItemCarrinho**
      - Id (int ou guid)
      - Produto (string)
@@ -127,13 +127,14 @@ O objetivo deste teste é avaliar a capacidade do candidato em:
 2. **Persistência de Dados**: Os dados do carrinho devem ser persistidos no banco de dados SQL Server.
 
 ### Estrutura de Tabelas
-- Deve ser criado o script das 2 tabelas: Carrinhos e Carrinho_Itens.
-- Criar uma pasta chamada 'SQL' e armazenar os scripts lá dentro do projeto. Pode utilizar um banco de dados local, via docker, em nuveme e etc, desde que não esqueça de versionar os scripts SQL junto com o projeto para criarmos a mesma estrutura para validarmos ao avaliar o teste.
+- Os dados do carrinho devem ser armazenadas em 2 tabelas: Carrinhos e Carrinho_Itens.
+- Criar uma pasta chamada 'SQL' e armazenar todos scripts (Tabelas, Procedures, Views, etc) dentro do projeto.
+- Pode utilizar um banco de dados local, via docker, em nuvem e etc, desde que não esqueça de versionar os scripts SQL junto com o projeto para criarmos a mesma estrutura para validarmos ao avaliar o teste.
 
 ## Resultado Final
 
 ## Esperado
-- A API deve estar completamente funcional, permitindo a gestão de um carrinho de compras através dos endpoints especificados.
+- A API REST deve estar completamente funcional, permitindo a gestão de um carrinho de compras através dos endpoints especificados.
 - Deve ser realizado todas validações necessários desde a obrigatoriedade das informações ao adicionar um item ao carrinho, excluir um item que não existe, etc.
 
 ## Desejável
@@ -155,12 +156,12 @@ O objetivo deste teste é avaliar a capacidade do candidato em:
 ### Funcionalidades
 
 1. **Página do Carrinho de Compras**:
-   - A página deve exibir uma tabela com os seguintes campos para cada item no carrinho:
+   - A página deve exibir uma tabela HTML com os seguintes campos para cada item no carrinho:
      - Nome do Produto
      - Quantidade
      - Preço Unitário
      - Preço Total (Quantidade x Preço Unitário)
-     - Botão para Excluir Item
+     - Botão para Excluir o Item
 
 2. **Adicionar Item ao Carrinho**:
    - Deve haver um botão "Adicionar Item", que ao ser clicado, exibe um modal com os seguintes campos:
@@ -179,9 +180,9 @@ O objetivo deste teste é avaliar a capacidade do candidato em:
 4. **Alterar Quantidade de Item**:
    - Cada linha do item no carrinho deve ter um campo ou dropdown para alterar a quantidade do item.
 
-### Integração com a API
+### Integração com a API REST
 
-A integração com a API deve ser realizada diretamente pelo Front End usando JavaScript puro ou qualquer biblioteca de preferência que pode auxiliar no desenvolvimento e produtividade (como por exemplo o jQuery). Abaixo estão os endpoints que devem ser consumidos:
+A integração com a API REST deve ser realizada diretamente pelo Front End usando JavaScript puro ou qualquer biblioteca de preferência que pode auxiliar no desenvolvimento e produtividade (como por exemplo o jQuery). Abaixo estão os endpoints que devem ser consumidos:
 
 - **Obter Carrinho**: `GET /api/carrinho`
 - **Adicionar Item**: `POST /api/carrinho`
@@ -200,7 +201,7 @@ A integração com a API deve ser realizada diretamente pelo Front End usando Ja
 ## Resultado Final
 
 ### Esperado
-- A aplicação deve consumir a API corretamente.
+- A aplicação deve consumir a API REST corretamente.
 - Deve ser possível adicionar, remover e atualizar a quantidade dos itens no carrinho.
 - A interface deve ser responsiva e intuitiva.
 
